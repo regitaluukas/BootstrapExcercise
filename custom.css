@@ -43,6 +43,19 @@ footer {
     color: rgb(255, 255, 255);
 }
 
-.lnr-users {
+.lnr {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.05em;
+}
+  
+.lnr-camera {
     font-size: 40px;
+    color: black;
+}
+
+.lnr-film-play {
+    font-size: 40px;
+    color: black;
 }
