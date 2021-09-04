@@ -55,7 +55,10 @@
                             <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
                             <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
                         </div> 
-                    </li> 
+                    </li>
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="staff.html" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">Meist</a> 
+                    </li>  
                 </ul>
                 <!-- search -->
                 <form class="form-inline m-2 my-lg-0">
@@ -106,29 +109,27 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <form>
-                            <div class="form-group">
-                                <label for="eesnimi">Eesnimi:</label>
-                                <input class="form-control" placeholder="Sisesta eesnimi" id="eesnimi">
-                              </div>
-                              <div class="form-group">
-                                <label for="perenimi">Perenimi:</label>
-                                <input class="form-control" placeholder="Sisesta perenimi" id="perenimi">
-                              </div>
-                            <div class="form-group">
-                                <label for="number">Telefoninumber:</label>
-                                <input type="tel" class="form-control" placeholder="Sisesta telefoninumber" id="number">
-                              </div>
-                            <div class="form-group">
-                                <label for="email">E-mail:</label>
-                                <input type="email" class="form-control" placeholder="Sisesta e-mail" id="email">
-                              </div>
-                            <div class="form-group form-check">
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox">Soovin uudiskirju
-                              </label>
+                        <div class="form-group">
+                            <label for="eesnimi">Eesnimi:</label>
+                            <input class="form-control" placeholder="Sisesta eesnimi" id="eesnimi">
                             </div>
-                          </form>
+                            <div class="form-group">
+                            <label for="perenimi">Perenimi:</label>
+                            <input class="form-control" placeholder="Sisesta perenimi" id="perenimi">
+                            </div>
+                        <div class="form-group">
+                            <label for="number">Telefoninumber:</label>
+                            <input type="tel" class="form-control" placeholder="Sisesta telefoninumber" id="number">
+                            </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" class="form-control" placeholder="Sisesta e-mail" id="email">
+                            </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox">Soovin uudiskirju
+                            </label>
+                        </div>
                     <!-- TODO! --->
                     </div>  
                     <div class="col-lg-3">
@@ -189,16 +190,16 @@
                     </div>
                     <div class="col-lg-6 text-center">
                         <h3>Jälgi meid</h3>
-                        <button type="button" class="btn btn-link">
+                        <a type="button" class="btn btn-link" href="https://www.instagram.com/" title="Instagram" data-toggle="tooltip" data-placement="bottom">
                             <svg class="lnr lnr-camera">
                                 <use xlink:href="#lnr-camera"></use>
-                            </svg> 
-                        </button>
-                        <button type="button" class="btn btn-link">
+                            </svg>
+                        </a>
+                        <a type="button" class="btn btn-link" href="https://www.youtube.com" title="Youtube" data-toggle="tooltip" data-placement="bottom">
                             <svg class="lnr lnr-film-play">
                                 <use xlink:href="#lnr-film-play"></use>
                             </svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -208,5 +209,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+        <script>
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip();
+            })
+        </script>
     </body>
 </html>         
